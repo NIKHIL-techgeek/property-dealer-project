@@ -1,0 +1,19 @@
+/* src/pages/Home.css */
+
+.hero-section {
+  /* deep blue gradient */
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+}
+
+/* Slight drop-shadow to lift the section */
+.hero-section .container {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Bigger button with subtle shadow */
+.hero-section .btn-call {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}

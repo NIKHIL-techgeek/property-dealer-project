@@ -1,44 +1,122 @@
+// src/pages/Home.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
     <>
-      <div className="p-5 text-center bg-light">
-        <h1 className="mb-3">Your Delhi Property Partner</h1>
-        <p className="mb-4">Helping you buy, sell, and rent properties in Delhi with trust and expertise.</p>
-        <Link to="/listings" className="btn btn-primary btn-lg">View Listings</Link>
-      </div>
+      {/* Hero */}
+      <section
+        id="hero"
+        className="text-center py-5"
+        style={{
+          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+          color: '#fff',
+          textShadow: '0 1px 3px rgba(0,0,0,0.3)'
+        }}
+      >
+        <div className="container">
+          <h1 className="display-3 fw-bold mb-3">Delhi Properties</h1>
+          <p className="lead mb-4">
+            Fast, fair & hassle-free buying, selling, and renting across Delhi.
+          </p>
+          <p className="fs-5 mb-4">
+            📞{' '}
+            <a
+              href="tel:+919810264427"
+              className="text-white text-decoration-none fw-bold"
+            >
+              +91-9810264427
+            </a>
+          </p>
+          <a
+            href="tel:+919810264427"
+            className="btn btn-light"
+            style={{
+              fontSize: '1.25rem',
+              padding: '0.75rem 1.5rem',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.2)'
+            }}
+          >
+            Call Now
+          </a>
+        </div>
+      </section>
 
-      <div className="row my-5">
-        <div className="col-md-4 mb-3">
-          <div className="card h-100">
-            <img src="/images/feature1.jpg" className="card-img-top" alt="Buy Property" />
-            <div className="card-body">
-              <h5 className="card-title">Buy</h5>
-              <p className="card-text">Find your dream home in Delhi.</p>
+      {/* Services */}
+      <section id="services" className="py-5">
+        <div className="container">
+          <h2 className="mb-4 text-center">What We Do</h2>
+          <div className="row gx-4 text-center">
+            <div className="col-md-4 mb-4">
+              <i className="bi bi-house-door-fill display-3 text-primary mb-3"></i>
+              <h5 className="fw-bold">Buy</h5>
+              <p>Find your dream home in your ideal neighborhood.</p>
+            </div>
+            <div className="col-md-4 mb-4">
+              <i className="bi bi-cash-stack display-3 text-success mb-3"></i>
+              <h5 className="fw-bold">Sell</h5>
+              <p>Get the best market price, quickly and transparently.</p>
+            </div>
+            <div className="col-md-4 mb-4">
+              <i className="bi bi-key-fill display-3 text-warning mb-3"></i>
+              <h5 className="fw-bold">Rent</h5>
+              <p>Access vetted rental properties to suit your lifestyle.</p>
             </div>
           </div>
         </div>
-        <div className="col-md-4 mb-3">
-          <div className="card h-100">
-            <img src="/images/feature2.jpg" className="card-img-top" alt="Sell Property" />
-            <div className="card-body">
-              <h5 className="card-title">Sell</h5>
-              <p className="card-text">Get the best price for your property.</p>
+      </section>
+
+      {/* About */}
+      <section id="about" className="bg-light py-5">
+        <div className="container">
+          <h2 className="mb-4 text-center">About Us</h2>
+          <div className="row align-items-center">
+            <div className="col-md-6 mb-4 mb-md-0">
+              <img
+                src="/images/dad-photo.jpg"
+                alt="Our team"
+                className="img-fluid rounded shadow"
+              />
+            </div>
+            <div className="col-md-6">
+              <p>
+                Delhi Properties has been guiding buyers, sellers, and renters
+                for over 10 years. Our hyper-local expertise ensures you get
+                personalized service every step of the way.
+              </p>
+              <p>
+                Certified agents, transparent fees, and a commitment to
+                honesty—because your home is more than an address, it’s a
+                promise.
+              </p>
             </div>
           </div>
         </div>
-        <div className="col-md-4 mb-3">
-          <div className="card h-100">
-            <img src="/images/feature3.jpg" className="card-img-top" alt="Rent Property" />
-            <div className="card-body">
-              <h5 className="card-title">Rent</h5>
-              <p className="card-text">Explore rental options tailored for you.</p>
-            </div>
-          </div>
+      </section>
+
+      {/* Contact */}
+      <section
+        id="contact"
+        className="py-5 text-center"
+        style={{ backgroundColor: '#f8f9fa' }}
+      >
+        <div className="container">
+          <h2 className="mb-4">Get In Touch</h2>
+          <p className="fs-4 mb-4">
+            📞{' '}
+            <a
+              href="tel:+919810264427"
+              className="text-decoration-none fw-semibold"
+              style={{ color: '#1e3c72' }}
+            >
+              +91-9810264427
+            </a>
+          </p>
+          <a href="tel:+919810264427" className="btn btn-primary btn-lg">
+            Call Now
+          </a>
         </div>
-      </div>
+      </section>
     </>
   );
 }

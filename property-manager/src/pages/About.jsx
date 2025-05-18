@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default function Listings() { return <h2>Listings page</h2>; }
+export default function About() {
+  return <h2>About page</h2>;
+}
