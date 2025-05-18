@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import React from 'react';
 
 export default function Home() {
@@ -23,7 +22,7 @@ export default function Home() {
             📞{' '}
             <a
               href="tel:+919810264427"
-              className="text-white text-decoration-none fw-bold"
+              className="text-white fw-bold text-decoration-none"
             >
               +91-9810264427
             </a>
@@ -70,27 +69,15 @@ export default function Home() {
       <section id="about" className="bg-light py-5">
         <div className="container">
           <h2 className="mb-4 text-center">About Us</h2>
-          <div className="row align-items-center">
-            <div className="col-md-6 mb-4 mb-md-0">
-              <img
-                src="/images/dad-photo.jpg"
-                alt="Our team"
-                className="img-fluid rounded shadow"
-              />
-            </div>
-            <div className="col-md-6">
-              <p>
-                Delhi Properties has been guiding buyers, sellers, and renters
-                for over 10 years. Our hyper-local expertise ensures you get
-                personalized service every step of the way.
-              </p>
-              <p>
-                Certified agents, transparent fees, and a commitment to
-                honesty—because your home is more than an address, it’s a
-                promise.
-              </p>
-            </div>
-          </div>
+          <p>
+            Delhi Properties has been guiding buyers, sellers, and renters for
+            over 10 years. Our hyper-local expertise ensures you get personalized
+            service every step of the way.
+          </p>
+          <p>
+            Certified agents, transparent fees, and a commitment to honesty—because
+            your home is more than an address, it’s a promise.
+          </p>
         </div>
       </section>
 

@@ -1,14 +1,15 @@
+// src/components/Layout.jsx
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 export default function Layout() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
-          <NavLink className="navbar-brand" to="/">
+          <a className="navbar-brand" href="#hero">
             Delhi Properties
-          </NavLink>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,24 +24,26 @@ export default function Layout() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/">Home</NavLink>
+                <a className="nav-link" href="#hero">Home</a>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/listings">Listings</NavLink>
+                <a className="nav-link" href="#services">Services</a>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about">About</NavLink>
+                <a className="nav-link" href="#about">About</a>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">Contact</NavLink>
+                <a className="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <main className="container my-4">
+      
+      <main className="container my-4 p-0">
         <Outlet />
       </main>
+
       <footer className="bg-light py-4 mt-auto">
         <div className="container text-center">
           <p className="mb-0">&copy; {new Date().getFullYear()} Delhi Properties</p>
