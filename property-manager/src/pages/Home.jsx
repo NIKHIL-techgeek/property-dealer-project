@@ -3,108 +3,69 @@ import React from 'react';
 export default function Home() {
   return (
     <>
-      {/* Hero */}
-      <section
-        id="hero"
-        className="text-center py-5"
-        style={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
-          color: '#fff',
-          textShadow: '0 1px 3px rgba(0,0,0,0.3)'
-        }}
-      >
+      {/* Hero Section */}
+      <section id="hero" className="section-hero">
         <div className="container">
           <h1 className="display-3 fw-bold mb-3">Delhi Properties</h1>
           <p className="lead mb-4">
-            Fast, fair & hassle-free buying, selling, and renting across Delhi.
+            Fast, fair & hassle-free residential & industrial property services across Delhi.
           </p>
           <p className="fs-5 mb-4">
             📞{' '}
-            <a
-              href="tel:+919810264427"
-              className="text-white fw-bold text-decoration-none"
-            >
+            <a href="tel:+919810264427" className="text-white fw-bold">
               +91-9810264427
             </a>
           </p>
-          <a
-            href="tel:+919810264427"
-            className="btn btn-light"
-            style={{
-              fontSize: '1.25rem',
-              padding: '0.75rem 1.5rem',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.2)'
-            }}
-          >
-            Call Now
+          <a href="#contact" className="btn btn-lg btn-light">
+            Get in Touch
           </a>
         </div>
       </section>
 
-      {/* Services */}
-      {/* Services */}
-      <section id="services" className="py-5">
-        <div className="container text-center">
-          <h2 className="mb-4">What We Do</h2>
-
-          <div className="mb-4">
-            <h5 className="fw-bold">Buy</h5>
-            <p>Find your dream home in your ideal neighborhood.</p>
-          </div>
-
-          <div className="mb-4">
-            <h5 className="fw-bold">Sell</h5>
-            <p>Get the best market price, quickly and transparently.</p>
-          </div>
-
-          <div className="mb-4">
-            <h5 className="fw-bold">Rent</h5>
-            <p>Access vetted rental properties to suit your lifestyle.</p>
-          </div>
-
-          <div className="mb-4">
-            <h5 className="fw-bold">Commercial</h5>
-            <p>Assist you with leasing and purchasing of commercial properties.</p>
-          </div>
-        </div>
-      </section>
-
-
-      {/* About */}
-      <section id="about" className="bg-light py-5">
+      {/* Services Section */}
+      <section id="services" className="section-services">
         <div className="container">
-          <h2 className="mb-4 text-center">About Us</h2>
+          <h2 className="mb-4">What We Do</h2>
+          <div className="services-grid">
+            {[
+              { title: 'Buy',        desc: 'Find your dream home in your ideal neighborhood.' },
+              { title: 'Sell',       desc: 'Get the best market price, quickly and transparently.' },
+              { title: 'Rent',       desc: 'Access vetted rental properties to suit your lifestyle.' },
+              { title: 'Commercial', desc: 'Assist you with leasing and purchasing commercial properties.' }
+            ].map(({ title, desc }) => (
+              <div key={title} className="service-item">
+                <h5>{title}</h5>
+                <p>{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="section-about">
+        <div className="container">
+          <h2 className="mb-4">About Us</h2>
           <p>
-            Delhi Properties has been guiding buyers, sellers, and renters for
-            over 10 years. Our hyper-local expertise ensures you get personalized
-            service every step of the way.
+            Delhi Properties has been guiding residential & industrial clients for over 10 years with hyper-local expertise.
           </p>
           <p>
-            Certified agents, transparent fees, and a commitment to honesty—because
-            your home is more than an address, it’s a promise.
+            Certified agents, transparent fees, and a commitment to honesty—your property is more than an address, it’s a promise.
           </p>
         </div>
       </section>
 
-      {/* Contact */}
-      <section
-        id="contact"
-        className="py-5 text-center"
-        style={{ backgroundColor: '#f8f9fa' }}
-      >
+      {/* Contact Section */}
+      <section id="contact" className="section-contact">
         <div className="container">
           <h2 className="mb-4">Get In Touch</h2>
           <p className="fs-4 mb-4">
             📞{' '}
-            <a
-              href="tel:+919810264427"
-              className="text-decoration-none fw-semibold"
-              style={{ color: '#1e3c72' }}
-            >
+            <a href="tel:+919810264427" className="fw-semibold" style={{ color: '#fff' }}>
               +91-9810264427
             </a>
           </p>
-          <a href="tel:+919810264427" className="btn btn-primary btn-lg">
+          <a href="tel:+919810264427" className="btn btn-lg btn-light">
             Call Now
           </a>
         </div>
