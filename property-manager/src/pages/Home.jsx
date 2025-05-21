@@ -1,6 +1,11 @@
 // src/pages/Home.jsx
 import React from 'react';
-
+import prop1 from '../images/prop1.jpeg';
+import commercial from '../images/commercial.jpeg';
+import commercial2 from '../images/commercial2.jpeg';
+import prop2 from '../images/prop2.jpeg';
+import prop3 from '../images/prop3.jpg';
+import dad from '../images/dad.jpg';
 export default function Home() {
   return (
     <>
@@ -35,9 +40,8 @@ export default function Home() {
             </div>
             <div className="col-md-6 panel-img">
               <img
-                src="/images/residential.jpg"
-                alt="Residential Properties"
-                className="img-fluid rounded shadow"
+                src={prop1}
+                className="img-fluid img-small"
               />
             </div>
           </div>
@@ -50,9 +54,9 @@ export default function Home() {
           <div className="row align-items-center">
             <div className="col-md-6 panel-img mb-4 mb-md-0">
               <img
-                src="/images/commercial.jpg"
+                src={commercial}
                 alt="Commercial Properties"
-                className="img-fluid rounded shadow"
+                className="img-fluid img-small"
               />
             </div>
             <div className="col-md-6">
@@ -91,24 +95,27 @@ export default function Home() {
           <h2 className="mb-4">Showcase</h2>
           <div className="properties-grid">
             <div className="card property-card">
-              <img src="/images/prop1.jpg" alt="Property 1" />
+              <img src={prop2}
+                className="img-fluid img-small" />
               <div className="card-body">
                 <h5 className="card-title">Cozy 2-BHK in South Delhi</h5>
-                <p className="card-text">2 Beds · 2 Baths</p>
+                {/* <p className="card-text">2 Beds · 2 Baths</p> */}
               </div>
             </div>
             <div className="card property-card">
-              <img src="/images/prop2.jpg" alt="Property 2" />
+              <img src={commercial2}
+                className="img-fluid img-small" />
               <div className="card-body">
                 <h5 className="card-title">Modern Office Space</h5>
-                <p className="card-text">₹1.2Cr · 1200 sq.ft · Commercial</p>
+                {/* <p className="card-text">₹1.2Cr · 1200 sq.ft · Commercial</p> */}
               </div>
             </div>
             <div className="card property-card">
-              <img src="/images/prop3.jpg" alt="Property 3" />
+              <img src={prop3}
+                className="img-fluid img-small" />
               <div className="card-body">
                 <h5 className="card-title">Luxury Villa in NOIDA</h5>
-                <p className="card-text">₹2.5Cr · 4 Beds · 3 Baths</p>
+                {/* <p className="card-text">₹2.5Cr · 4 Beds · 3 Baths</p> */}
               </div>
             </div>
           </div>
@@ -123,8 +130,7 @@ export default function Home() {
             {/* Dad’s Photo */}
             <div className="col-md-4 text-center mb-4 mb-md-0">
               <img
-                src="/images/dad.jpg"
-                alt="Our Team - Dad"
+                src={dad}
                 className="img-fluid rounded-circle shadow"
                 style={{ maxWidth: '200px' }}
               />
