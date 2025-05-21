@@ -42,28 +42,33 @@ export default function Home() {
       </section>
 
       {/* Services */}
+      {/* Services */}
       <section id="services" className="py-5">
-        <div className="container">
-          <h2 className="mb-4 text-center">What We Do</h2>
-          <div className="row gx-4 text-center">
-            <div className="col-md-4 mb-4">
-              <i className="bi bi-house-door-fill display-3 text-primary mb-3"></i>
-              <h5 className="fw-bold">Buy</h5>
-              <p>Find your dream home in your ideal neighborhood.</p>
-            </div>
-            <div className="col-md-4 mb-4">
-              <i className="bi bi-cash-stack display-3 text-success mb-3"></i>
-              <h5 className="fw-bold">Sell</h5>
-              <p>Get the best market price, quickly and transparently.</p>
-            </div>
-            <div className="col-md-4 mb-4">
-              <i className="bi bi-key-fill display-3 text-warning mb-3"></i>
-              <h5 className="fw-bold">Rent</h5>
-              <p>Access vetted rental properties to suit your lifestyle.</p>
-            </div>
+        <div className="container text-center">
+          <h2 className="mb-4">What We Do</h2>
+
+          <div className="mb-4">
+            <h5 className="fw-bold">Buy</h5>
+            <p>Find your dream home in your ideal neighborhood.</p>
+          </div>
+
+          <div className="mb-4">
+            <h5 className="fw-bold">Sell</h5>
+            <p>Get the best market price, quickly and transparently.</p>
+          </div>
+
+          <div className="mb-4">
+            <h5 className="fw-bold">Rent</h5>
+            <p>Access vetted rental properties to suit your lifestyle.</p>
+          </div>
+
+          <div className="mb-4">
+            <h5 className="fw-bold">Commercial</h5>
+            <p>Assist you with leasing and purchasing of commercial properties.</p>
           </div>
         </div>
       </section>
+
 
       {/* About */}
       <section id="about" className="bg-light py-5">
