@@ -150,20 +150,38 @@ export default function Home() {
 
 
       {/* Contact Section */}
+      {/* Contact Section */}
       <section id="contact" className="section-contact">
         <div className="container text-center">
           <h2 className="mb-4">Get In Touch</h2>
-          <p className="fs-4 mb-4">
+
+          <p className="fs-4 mb-2">
             📞{' '}
             <a href="tel:+919810264427" className="fw-semibold" style={{ color: '#fff' }}>
               +91-9810264427
             </a>
           </p>
-          <a href="tel:+919810264427" className="btn btn-lg btn-light">
+
+          <p className="mb-4">
+            📍 D-53 Mayapuri Phase 2, New Delhi, 110064
+          </p>
+
+          <a href="tel:+919810264427" className="btn btn-lg btn-light mb-5">
             Call Now
           </a>
+
+          <div className="map-responsive mb-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.356187922223!2d77.11542800000002!3d28.619084999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0300163aca5f%3A0xc7972eb9b01014f0!2sMAYAPURI%20PHASE-2!5e0!3m2!1sen!2sin!4v1748https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.356187922223!2d77.11542800000002!3d28.619084999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0300163aca5f%3A0xc7972eb9b01014f0!2sMAYAPURI%20PHASE-2!5e0!3m2!1sen!2sin!4v1748156171867!5m2!1sen!2sin1561718"
+              allowFullScreen
+              loading="lazy"
+              title="Our Location"
+            ></iframe>
+          </div>
         </div>
       </section>
+
+
     </>
   );
 }
